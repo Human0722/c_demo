@@ -1,6 +1,8 @@
-//
-// Created by Human0722 on 2020/11/18.
-//
+/*
+ * @Author: Human0722
+ * @Date: 2020-11-18 21:22:40
+ * @FilePath: /c_demo/getopt_f/login.c
+ */
 #include <stdio.h>
 #include <unistd.h>
 
@@ -24,6 +26,7 @@ int main(int argc, char *argv[])
             case 'p':
                 passwd = optarg;
                 break;
+            /* Unknown option or miss argument */
             case '?':
                 if(optopt == 'a' || optopt == 'u' || optopt == 'p')
                 {

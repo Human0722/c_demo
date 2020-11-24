@@ -1,5 +1,5 @@
 /*
- * @Author: your name
+ * @Author: Human0722
  * @Date: 2020-11-24 10:40:35
  * @FilePath: /c_demo/04_my_cp_d/myCp.c
  */
@@ -22,16 +22,17 @@ int main(int argc, char *argv[])
 
     int len = 0;
     int buf[BUFFSIZE] = {0};
-    int srcfd;
-    int dstfd;
 
-    srcfd = open(argv[1], O_RDONLY);
+    /* open source file */ 
+    int srcfd = open(argv[1], O_RDONLY);
     if(srcfd == -1)
     {
         perror("open source file");
         exit(1);
     }
-    dstfd = open(argv[2], O_CREAT | O_WRONLY, 0666);
+
+    /* open dest file */
+    int dstfd = open(argv[2], O_CREAT | O_WRONLY, 0666);
     while((len = read(srcfd, buf, BUFFSIZE)) > 0)
     {
         if((write(dstfd, buf, len)) != len)
@@ -40,6 +41,7 @@ int main(int argc, char *argv[])
             exit(1);
         }
     }
+    /* handle read error */
     if(len < 0)
     {
         perror("src read error");

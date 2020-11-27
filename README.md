@@ -9,3 +9,5 @@
 - 03_dynamic_library
 - 04_cp
 - 05_lseek
+- 06_block
+- 07_fcntl

@@ -7,7 +7,14 @@
 - 01_getopt_f:  command_line_tool_demo
 - 02_static_library_d
 - 03_dynamic_library
-- 04_cp
-- 05_lseek
-- 06_block
-- 07_fcntl
+- 04_cp_d
+- 05_lseek_d
+- 06_block_d
+- 07_fcntl_f
+- 08_stat_f
+- 09_time_f
+- 10_chmod_f
+- 11_utime_f
+- 12_truncate_f
+- 13_links_f
+- 14_dir_f

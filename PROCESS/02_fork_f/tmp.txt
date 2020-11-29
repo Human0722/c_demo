@@ -1,0 +1,5 @@
+I'm father process!
+Before fork~
+I'm child process, pid is 19380, my father's pid is 19379
+Before fork~
+I'm father process, pid is 19379, my child's pid is 19380

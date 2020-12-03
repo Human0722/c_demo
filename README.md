@@ -19,3 +19,8 @@
 - 12_truncate_f
 - 13_links_f
 - 14_dir_f
+### PROCESS
+- 01_getpid_f
+- 02_fork_f
+- 03_exec_f
+- 04_defunct_d

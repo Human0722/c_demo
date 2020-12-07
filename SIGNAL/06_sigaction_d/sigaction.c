@@ -1,7 +1,7 @@
 /*
- * @Author: your name
+ * @Author: Human0722
  * @Date: 2020-12-07 17:06:47
- * @LastEditTime: 2020-12-07 21:38:06
+ * @LastEditTime: 2020-12-07 21:53:28
  * @FilePath: /c_demo/SIGNAL/06_sigaction_d/sigaction.c
  */
 

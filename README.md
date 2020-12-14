@@ -23,4 +23,17 @@
 - 01_getpid_f
 - 02_fork_f
 - 03_exec_f
-- 04_defunct_d
+- 04_defunct_d  
+### SIGNAL
+- 01_hellosignal_d
+- 02_handlesignal_d
+- 03_kill_f
+- 04_alarm_f
+- 05_sigset_d
+- 06_sigaction_d
+- 07_sigaction_param_d
+- 08_restart_d
+- 09_longjmp_d
+- 10_jmphandler_d  
+
+### IPC

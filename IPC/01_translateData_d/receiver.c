@@ -25,11 +25,10 @@ void handler(int sig)
     close(fd);
     unlink("tmp");
 
-    printf("hit handler\n");
     /* output content of buf */
-    buf[n] = '\0';
-    printf("%s", buf);
-    //if(*buf == 'q') exit(0);
+    for (i = 0; i < n; ++i)
+        putchar(toupper(buf[i]));
+    if(*buf == 'q') exit(0);
 }
 
 int main(void)

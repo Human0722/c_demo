@@ -1,0 +1,4 @@
+#ifndef FIFO
+#define FIFO
+#define PATH /root/hello
+#endif

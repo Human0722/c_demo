@@ -1,7 +1,7 @@
 /*
  * @Author: Human0722
  * @Date: 2020-12-30 15:45:40
- * @LastEditTime: 2020-12-30 20:17:38
+ * @LastEditTime: 2020-12-30 20:20:15
  * @FilePath: /c_demo/IPC/08_semctl_d/semctl.c
  */
 #include <unistd.h>
@@ -41,7 +41,7 @@ int main() {
     // 3. 请求 2 个 R0 资源
     puts("3. 请求两个 R0 资源");
     struct sembuf op1 = {0, -2, 0};
-    semop(id, &opq, 1);
+    semop(id, &op1, 1);
     printSem(id);
 
     //4. 请求3个R1 和 5个R2
